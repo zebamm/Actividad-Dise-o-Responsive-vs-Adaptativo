@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Responsivo</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: sans-serif;
+            gap: 1rem;
+        }
+        .caja {
+            background: lightseagreen;
+            padding: 5%;
+            font-size: 2vw; /* escala según el ancho de la ventana */
+        }
+        @media(max-width: 480px){
+            body{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">Este es un diseño responsivo</div>
+    <div class="caja">Esto tambien es un diseño responsivo</div>
+    <div class="caja">Este no es un diseño no responsivo</div>
+</body>
+</html>
